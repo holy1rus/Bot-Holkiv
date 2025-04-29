@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: holkiv-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: YOOMONEY_WALLET
+        sync: false
+    disk:
+      name: holkiv-data
+      mountPath: /opt/render/project/src
+      sizeGB: 1 

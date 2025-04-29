@@ -1,0 +1,23 @@
+{
+  "name": "holkiv-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for Holkiv",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "telegraf": "^4.15.3",
+    "sqlite3": "^5.1.7",
+    "dotenv": "^16.4.5",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+} 
